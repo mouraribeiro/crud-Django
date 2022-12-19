@@ -1,0 +1,151 @@
+.container-fluid{
+    padding: 0;
+}
+
+/* navbar */
+
+.navbar{
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+.navbar-nav{
+    margin: auto;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Botão de adicionar */
+.add-div{
+    background-color: #3476e2;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.fas.fa-plus{
+   margin-right: 5px;  
+    
+}
+
+#add-link{
+ text-decoration: none;   
+}
+
+
+
+/*MESSAGE*/
+ul.message{
+    padding: 0;
+}
+li.message{
+    list-style: none;
+}
+
+
+
+/* Lista de tarefas */
+.list-div{
+    padding: 0;
+}
+.task-list{
+    padding: 0;
+}
+.task-item{
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.fas.fa-trash, .fas.fa-edit{
+    cursor:pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right;
+}
+.fa-thumbs-up{
+    float: right;
+}
+#clicks{
+    float: inline-end;
+    padding: 10px 20px;
+}
+
+.fas.fa-trash{
+    color: #db1e47;
+}
+.fas.fa-edit{
+    color: #13c43f;
+}
+
+
+/* botao*/
+
+.btn-add{
+    margin: 20px 0px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #3476e2;
+    height: 50px;
+    border-top: 2px solid #202020;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+footer p {
+    color: #f5f5f5;
+    text-align: center;
+    top: 25%;
+    position: relative;
+}
+
+
+
+/*paginação */
+
+.pagination{
+    margin-bottom: 20px;
+}
+
+.step-links{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.step-links .current{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* login */
+
+.auth-card{
+margin-bottom: 30px;}
+
+
+#vote-End{
+    text-align: center;
+}
+
+.entrar{
+    margin-top: 10px;
+}
+
+.task-item a{
+    text-decoration: none;
+}

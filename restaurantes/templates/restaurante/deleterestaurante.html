@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Lista de Restaurantes {% endblock %}
+
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h1>Delete um restaurante</h1>
+    <form  method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit"class="btn btn-success" value="Deletar restaurante">
+    </form>
+    
+    
+</div>
+
+{% endblock %}

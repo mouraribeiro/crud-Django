@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Lista de Restaurantes {% endblock %}
+
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+   
+   
+   
+    <ul class="taks-list">
+        {% for restaurante in restaurante %}
+        <li class="task-item">
+            <span>
+                {{ restaurante.nome}}               
+                
+            </a></span>
+            <a  id="likebtn">
+                <i class="fa fa-thumbs-up " onClick='votou()'></i> <a id="clicks">0</a>              
+            </a>                        
+                 
+                     
+        </li> 
+        {% endfor %}   
+        
+        
+    </ul>
+    <div class="offset-1 col-10 list-div">
+       <div> <h1 id ="vote-End">VOTAÇÃO ENCERRADA</h1></div>
+        
+    </div>
+    
+    
+</div>
+
+{% endblock %}
+<script src="js/voto.js">
+    
+</script>

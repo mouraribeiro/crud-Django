@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Editando Restaurante '{{restaurante.nome}}' {% endblock %}
+
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h1>Editando '{{restaurante.nome}}'' </h1>
+    <form  method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit"class="btn btn-success" value="Editar restaurante">
+    </form>
+    
+    
+</div>
+
+{% endblock %}
