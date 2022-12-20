@@ -14,7 +14,7 @@ urlpatterns = [
     path('addrestaurante/', newRestaurante, name='new-restaurante'),
     path('edit/<int:id>', editRestaurante, name='edit-restaurante'),
     path('delete/<int:id>', deleteRestaurante, name='delete-restaurante'),
-    path('select/',selectList, name='voto_list'),
+    
     
    
     

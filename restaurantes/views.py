@@ -66,16 +66,3 @@ def deleteRestaurante(request, id):
 
 # parte dos votos -------------------------------------------------------------
 
-
-def selectList(request):
-        restaurante_list = Restaurante.objects.all().order_by('-created_at')
-
-        paginator = Paginator(restaurante_list, 5)
-
-        page = request.GET.get('page')
-
-        restaurante = paginator.get_page(page)  # tasks
-
-        return render(request, 'restaurante/select.html', {'restaurante': restaurante})
-
-

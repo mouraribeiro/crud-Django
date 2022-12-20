@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %} Lista de Restaurantes {% endblock %}
+{% block title %}  Restaurantes {% endblock %}
 
 
 {% block content %}
 
 <div class="offset-1 col-10 list-div">
-    <h2>Adicione um novo restaurante</h2>
+    <h2 style="text-align: center;">Adicione um novo restaurante</h2>
     <form  method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit"class="btn btn-success btn-add" value="Criar restaurante">
+        <input type="submit"class="btn btn-success btn-add" value="Adicionar restaurante">
     </form>
     
     

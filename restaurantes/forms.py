@@ -6,15 +6,11 @@ class RestauranteForm(forms.ModelForm):
 
     class Meta:
         model = Restaurante
-        fields = ('nome', 'description')
+        fields = ('nome', 'description', 'codigo')
 
 
 
 
-class VotoForm(forms.ModelForm):
-    class Meta:
-        model = Restaurante
-        fields = ('nome',)
 
 
     
