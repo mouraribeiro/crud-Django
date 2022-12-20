@@ -1,6 +1,7 @@
 from django.db import models
 
 from restaurantes.models import Restaurante
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -15,7 +16,8 @@ class Pergunta(models.Model):
         return self.question
     
 
-class Escolha(models.Model):
+class Escolha(models.Model):  
+    
     question = models.ForeignKey(Pergunta, on_delete=models.CASCADE, related_name ="choices")
     option = models.CharField( max_length=100)
     vote = models.IntegerField(default=0)

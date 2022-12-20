@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h3 ><strong>Votação Encerrada</strong></h3>
+
+<div class="list-group container container-pergunta">
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li {% if message.tags %} class="alert alert-{{message.tags}}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+
+    {% endif %}
+    <p>Horário Inicial: 09:00 </p>
+    <p>Horário Final: 12:00</p>
+    
+</div>
+
+
+
+
+    
+
+{% endblock %}

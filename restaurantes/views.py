@@ -64,5 +64,5 @@ def deleteRestaurante(request, id):
     return redirect('/')
 
 
-# parte dos votos -------------------------------------------------------------
+
 
