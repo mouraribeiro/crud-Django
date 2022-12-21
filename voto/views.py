@@ -27,7 +27,7 @@ def resultado(request,pk):
     hora_atual = hora_atual.strftime("%H")
     print("hora_atual:", hora_atual)
     hora_atual = int(hora_atual)    
-    if hora_atual > 9 and hora_atual < 21.16:
+    if hora_atual > 9 and hora_atual < 12:
         print('Tá liberado')
         if request.method == 'POST':
             inputvalue = request.POST['choice']
@@ -36,13 +36,13 @@ def resultado(request,pk):
             selected_option.save()
             return render(request, "resultado.html", {'question':question, 'options':options})
 
-        else:
-            messages.info(request, 'Horário de votos encerrado!')
-            return render(request, "resultado.html", {'question':question, 'options':options})
+    else:
+        messages.info(request, 'Horário de votos encerrado!')
+        return render(request, "resultado.html", {'question':question, 'options':options})
     return render(request, "resultado.html", {'question':question, 'options':options})
 
 
 
- # Verify if the voter has voted or not
+
 
 
