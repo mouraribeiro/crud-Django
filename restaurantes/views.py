@@ -24,7 +24,7 @@ def restauranteList(request):
 
 def restauranteView(request, id):
     restaurante = get_object_or_404(Restaurante, pk=id)
-    return render(request, 'restaurante/restaurante.html', {'restaurante': restaurante})
+    return render(request, 'restaurante/view.html', {'restaurante': restaurante})
 
 @login_required
 def newRestaurante(request):

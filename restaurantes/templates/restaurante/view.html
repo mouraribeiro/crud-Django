@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Editando Restaurante '{{restaurante.nome}}' {% endblock %}
+
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h1> {{restaurante.nome}} </h1>
+    <div class="container text-align-center">
+       <h6>{{restaurante.description}}</h6> 
+       
+    </div>
+    
+    
+    
+</div>
+
+{% endblock %}

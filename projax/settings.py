@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'users',
     'crispy_forms',
     'accounts',
-    'voto',
+    
     
     
    
@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATICFILES_DIRS = [BASE_DIR/'static']
+STATICFILES_DIRS = [BASE_DIR/'restaurantes/static']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 

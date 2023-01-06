@@ -7,7 +7,7 @@ urlpatterns = [
     path('', include('restaurantes.urls')),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('voto/', include('voto.urls')),
+    
    
 
     
